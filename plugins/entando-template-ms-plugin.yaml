@@ -6,13 +6,13 @@ healthCheckPath: "/actuator/health"
 roles:
   - "et-first-role"
   - "et-second-role"
-environmentVariables:
-  - name: MY_SIMPLE_VAR
-    value: mySimpleValue
-  - name: MY_SECRET_VAR
-    valueFrom:
-      secretKeyRef:
-        name: 4fc7ca99-my-secret
-        key: mySecretKey
+#environmentVariables:
+#  - name: MY_SIMPLE_VAR
+#    value: mySimpleValue
+#  - name: MY_SECRET_VAR
+#    valueFrom:
+#      secretKeyRef:
+#        name: 4fc7ca99-my-secret
+#        key: mySecretKey
 
 
