@@ -1,7 +1,17 @@
-image: nathanshaw/node-kc-microservice:0.0.1-SNAPSHOT
+descriptorVersion: v4
+image: nathanshaw/node-kc-microservice:0.0.2-SNAPSHOT
 dbms: none
 ingressPath: "/entando-template-api"
 healthCheckPath: "/actuator/health"
 roles:
   - "et-first-role"
   - "et-second-role"
+environmentVariables:
+  - name: MY_SIMPLE_VAR
+    value: mySimpleValue
+  - name: MY_SECRET_VAR
+    secretKeyRef:
+      name: my-secret
+      key: mySecretKey
+
+
