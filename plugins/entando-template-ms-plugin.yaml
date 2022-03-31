@@ -11,7 +11,7 @@ environmentVariables:
     value: mySimpleValue
   - name: MY_SECRET_VAR
     secretKeyRef:
-      name: my-secret
+      name: 4fc7ca99-my-secret
       key: mySecretKey
 
 
